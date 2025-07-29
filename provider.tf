@@ -1,4 +1,4 @@
 provider "aws" {
-  region = "us-ast-1" # Change to your preferred AWS region
+  region = "us-east-1" # Change to your preferred AWS region
   
 }
