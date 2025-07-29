@@ -7,13 +7,13 @@ resource "aws_sns_topic" "console_login_alerts" {
 resource "aws_sns_topic_subscription" "email" {
   topic_arn = aws_sns_topic.console_login_alerts.arn
   protocol  = "email"
-  endpoint  = "security-team@example.com" # Change to your team's email address
+  endpoint  = "brajesh540@gmail.com" # Change to your team's email address
 }
 #Enable and Configure AWS CloudTrail
 #Records all management events (including ConsoleLogin) in all regions.
 
 resource "aws_s3_bucket" "cloudtrail" {
-  bucket = "my-cloudtrail-logs-bucket"
+  bucket = "my-cloudtrail-logs-bucket-brajesh"
 
 }
 
