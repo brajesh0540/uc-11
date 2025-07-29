@@ -19,10 +19,6 @@ jobs:
       contents: write
       actions: write
       deployments: write
-
-    defaults:
-      run:
-        working-directory: uc-11
         
     steps:
       - name: Checkout code
@@ -52,4 +48,4 @@ jobs:
         run: terraform plan
 
       - name: Terraform apply
-        run: terraform destroy -auto-approve
+        run: terraform apply -auto-approve
